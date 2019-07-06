@@ -5,3 +5,4 @@ export const ELIMINAR_PRODUCTO = "ELIMINAR_PRODUCTO";
 export const EDITAR_PRODUCTO = "EDITAR_PRODUCTO";
 
 // estas son las 5 acciones que hace toda mi aplicacion
+//sudo json-server --watch productos.json -p 5000

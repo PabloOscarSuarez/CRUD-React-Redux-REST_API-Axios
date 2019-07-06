@@ -7,7 +7,7 @@ export default class Header extends Component {
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary justify-content-between d-flex">
         <h1>
           <Link to={"/"} className="text-light">
-            CRUD- Ract , Redux , REST API & Axios
+            ALMACEN DE PRODUCTOS
           </Link>
         </h1>
         <Link to={"/productos/nuevo"}>
