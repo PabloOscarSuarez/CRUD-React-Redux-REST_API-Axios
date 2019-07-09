@@ -1,14 +1,24 @@
 {
   "productos": [
     {
-      "nombre": "Pastel de Chocolate",
-      "precio": "60",
-      "id": 3
+      "nombre": "pez",
+      "precio": "120",
+      "id": "X8F6NR3"
     },
     {
-      "nombre": "Pastel de Fresa",
-      "precio": "40",
-      "id": 13
+      "nombre": "Jacqueline Linda",
+      "precio": "12",
+      "id": "kN5yxmh"
+    },
+    {
+      "nombre": "1212",
+      "precio": "1212",
+      "id": "lnoXodF"
+    },
+    {
+      "nombre": "Jacqueline Linda",
+      "precio": "12222",
+      "id": "ncRGo2_"
     }
   ]
 }

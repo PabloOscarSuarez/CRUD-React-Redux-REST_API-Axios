@@ -15,7 +15,7 @@ class Producto extends Component {
             <span className="badge badge-warning text-dark">$ {precio}</span>
           </div>
           <div className="col-md-4 justify-content-end acciones">
-            <Link to={`/producto/editar/${id}`}>
+            <Link to={`/productos/editar/${id}`}>
               <button className="btn btn-primary mr-2">Editar</button>
             </Link>
             <button
