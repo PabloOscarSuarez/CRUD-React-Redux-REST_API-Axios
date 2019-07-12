@@ -9,7 +9,7 @@ import axios from "axios";
 
 export const mostrarProductos = () => async dispatch => {
   const respuesta = await axios.get(
-    "https://my-json-server.typicode.com/pablooscarsuarez/CRUD-React-Redux-REST_API-Axios/productos"
+    "https://my-json-server.typicode.com/pablooscarsuarez/CRUD-React-Redux-REST_API-Axios/productos/"
   );
 
   dispatch({
@@ -41,7 +41,7 @@ export const borrarProducto = id => async dispatch => {
 
 export const agregarProducto = producto => async dispatch => {
   await axios.post(
-    "https://my-json-server.typicode.com/pablooscarsuarez/CRUD-React-Redux-REST_API-Axios/productos",
+    "https://my-json-server.typicode.com/pablooscarsuarez/CRUD-React-Redux-REST_API-Axios/productos/",
     producto
   );
   dispatch({
