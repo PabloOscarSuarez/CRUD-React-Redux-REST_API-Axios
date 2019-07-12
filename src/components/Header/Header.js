@@ -7,7 +7,7 @@ export default class Header extends Component {
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary justify-content-between d-flex">
         <h1>
           <Link to={"/"} className="text-light">
-            ALMACEN DE PRODUCTOS
+            ALMACEN DE PRODUCTOS (click aqui para obtener lista de productos)
           </Link>
         </h1>
         <Link to={"/productos/nuevo"}>
