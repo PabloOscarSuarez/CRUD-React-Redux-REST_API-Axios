@@ -8,7 +8,9 @@ import {
 import axios from "axios";
 
 export const mostrarProductos = () => async dispatch => {
-  const respuesta = await axios.get("http://localhost:5000/productos");
+  const respuesta = await axios.get(
+    "https://my-json-server.typicode.com/pablooscarsuarez/CRUD-React-Redux-REST_API-Axios/productos"
+  );
 
   dispatch({
     type: MOSTRAR_PRODUCTOS,
@@ -16,7 +18,9 @@ export const mostrarProductos = () => async dispatch => {
   });
 };
 export const mostrarProducto = id => async dispatch => {
-  const respuesta = await axios.get(`http://localhost:5000/productos/${id}`);
+  const respuesta = await axios.get(
+    `https://my-json-server.typicode.com/pablooscarsuarez/CRUD-React-Redux-REST_API-Axios/productos/${id}`
+  );
 
   dispatch({
     type: MOSTRAR_PRODUCTO,
@@ -25,7 +29,9 @@ export const mostrarProducto = id => async dispatch => {
 };
 
 export const borrarProducto = id => async dispatch => {
-  await axios.delete(`http://localhost:5000/productos/${id}`);
+  await axios.delete(
+    `https://my-json-server.typicode.com/pablooscarsuarez/CRUD-React-Redux-REST_API-Axios/productos/${id}`
+  );
 
   dispatch({
     type: ELIMINAR_PRODUCTO,
@@ -34,7 +40,10 @@ export const borrarProducto = id => async dispatch => {
 };
 
 export const agregarProducto = producto => async dispatch => {
-  await axios.post("http://localhost:5000/productos", producto);
+  await axios.post(
+    "https://my-json-server.typicode.com/pablooscarsuarez/CRUD-React-Redux-REST_API-Axios/productos",
+    producto
+  );
   dispatch({
     type: AGREGAR_PRODUCTO,
     payload: producto
@@ -43,7 +52,9 @@ export const agregarProducto = producto => async dispatch => {
 
 export const editarProducto = producto => async dispatch => {
   const respuesta = await axios.put(
-    `http://localhost:5000/productos/${producto.id}`,
+    `https://my-json-server.typicode.com/pablooscarsuarez/CRUD-React-Redux-REST_API-Axios/productos/${
+      producto.id
+    }`,
     producto
   );
   dispatch({
