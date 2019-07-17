@@ -46,7 +46,7 @@ class Index extends Component {
     };
     this.props.editarProducto(post);
     // this.setState({ nombre: "", precio: "" });
-    this.props.history.push("/");
+    this.props.history.push(`${process.env.PUBLIC_URL}/`);
   };
 
   render() {

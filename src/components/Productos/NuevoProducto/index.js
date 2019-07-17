@@ -31,7 +31,7 @@ class Index extends Component {
     };
     this.props.agregarPost(post);
     this.setState({ nombre: "", precio: "" });
-    this.props.history.push("/");
+    this.props.history.push(`${process.env.PUBLIC_URL}/`);
   };
   render() {
     return (

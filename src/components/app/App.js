@@ -14,11 +14,19 @@ export default class App extends Component {
           <Header />
           <div className="container">
             <Switch>
-              <Route exact path="/" component={Productos} />
-              <Route exact path="/productos/nuevo" component={NuevoProducto} />
               <Route
                 exact
-                path="/productos/editar/:id"
+                path={`${process.env.PUBLIC_URL}/`}
+                component={Productos}
+              />
+              <Route
+                exact
+                path={`${process.env.PUBLIC_URL}/productos/nuevo`}
+                component={NuevoProducto}
+              />
+              <Route
+                exact
+                path={`${process.env.PUBLIC_URL}/productos/editar/:id`}
                 component={EditarProducto}
               />
             </Switch>
